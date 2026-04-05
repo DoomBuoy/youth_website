@@ -772,7 +772,7 @@
                     showPage('lockedPage');
                     localStorage.setItem('verifiedMobile', mobile);
                 } else {
-                    accessError.innerHTML = 'Not Found. We couldn\'t find that number in our registry.';
+                    accessError.innerHTML = 'Record not found. Please check your number or <a href="#register" onclick="closeExistingUser(); document.getElementById(\'register\').scrollIntoView();" class="font-bold underline hover:text-red-800">click here to register</a>.';
                     accessError.classList.remove('hidden');
                 }
             } catch (error) {
